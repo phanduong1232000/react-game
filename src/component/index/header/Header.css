@@ -1,0 +1,28 @@
+.navbar-brand img {
+    width: 90px;
+  }
+.background{
+  background-color: #0f0f0f;
+  z-index: 999999999;
+}  
+.nav-item a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0.7rem;
+}  
+.play-item{
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 0.2rem;
+}
+a.play-item  {
+  font-size: 1rem;
+  min-width: 170px;
+  text-align: center;
+}
+
+@media (max-width: 992px){
+  a.play-item{
+    width: auto;
+  }
+}

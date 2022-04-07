@@ -1,0 +1,58 @@
+.share-token {
+    background: url(https://gunbow-project.vercel.app/img/background/backgroundTokenEconomics.png) no-repeat;
+    background-size: cover;
+   
+}
+.title-token-left{
+    display: flex;
+    color: white;
+    background-image: linear-gradient(135deg, #c284f57a 10%, #e34f4f8e);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+.title-token-left:hover{
+    background-image: linear-gradient(135deg, #c284f5 10%, #e34f4f);
+}
+.title-token-left h5 {
+    font-size: 0.8rem;
+    line-height: 8px;
+    margin-top: 8px;
+}
+.title-token-left p {
+    margin-top: revert;
+    line-height: 8px;
+    font-weight: bold;
+    color: #6cffe4;
+}
+
+.row-token-chart .col-lg-4 {
+    margin-bottom: 20px;
+}
+
+.title-token-right{
+    background-image: linear-gradient(135deg, #c284f57a 10%, #e34f4f8e);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.title-token-right:hover{
+    background-image: linear-gradient(135deg, #c284f5 10%, #e34f4f);
+}
+.title-token-right h5 {
+    font-size: 1.3rem;
+    line-height: 8px;
+    margin-top: 8px;
+}
+.title-token-right p {
+    margin-top: revert;
+    line-height: 8px;
+    font-weight: bold;
+    color: #6cffe4;
+}

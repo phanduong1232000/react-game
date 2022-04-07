@@ -1,0 +1,21 @@
+
+.card-team{
+    background-color: #00000099;
+    transition: 0.8s;
+    border: 3px solid #fbca60;
+}
+.card-team:hover{
+background-color: #fbca60;
+}
+
+.card-team img {
+    padding: 0px 40px;
+}
+.row-team{
+    margin-top: 50px;
+}
+.row-team .col-lg-4{
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}

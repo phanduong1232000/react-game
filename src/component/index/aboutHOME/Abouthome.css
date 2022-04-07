@@ -1,0 +1,140 @@
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+a:hover{
+    text-decoration: none;
+    color: #d7c4a1;
+    text-decoration: none;
+    font-weight: 600;
+}
+.bg-about{
+    background: url(https://gunbow-project.vercel.app/img/background/br1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.paddingtop-index{
+    padding-top: 150px;
+}
+.img-index{
+    background: url(https://gunbow-project.vercel.app/img/SQF/Khungtitle.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 43px 0px;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.title-index{
+    font-size: 1.3rem;
+    margin: 10px 0px 10px 0px;
+    font-weight: 700;
+    color: #a71310;
+    text-align: center;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.item1{
+    background: url(https://gunbow-project.vercel.app/img/SQF/buttonbuySQF.png) no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.item2{
+    background: url(https://gunbow-project.vercel.app/img/SQF/buttonbuySQF.png) no-repeat;
+    background-size: cover;
+    padding: 20px 0px;
+    width: 200px;
+    text-align: center;
+}
+.sqf-token{
+    background: url(https://gunbow-project.vercel.app/img/SQF/khungSQFToken.png) no-repeat;
+    background-position: center;
+    color: #a71310;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 700;
+    padding: 40px 0px;
+    margin-top: 10px;
+    background-size: 60%;
+    font-size: 1.4rem;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.token-item{
+    border: 5px solid #fbca60;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: left;
+    margin: 10px;
+    background: #00000099;
+    display: flex;
+    align-items: center;
+    
+}
+.token-item p{
+    
+    font-size: 1rem;
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   
+}
+.title-token{
+    background-image: linear-gradient(150deg, #e34f4f 0%, #c284f5 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.img-token{
+    width: 100%;
+}
+
+.token-item .item-token{
+    margin-left: 10px;
+    width: 63%;
+    color: white;
+    background: none;
+}
+
+
+@media only screen and (max-width: 1400px) and (min-width: 601px){
+    .img-index{
+        background-size: 90%;
+  }
+
+}
+
+@media (max-width: 600px){
+    .img-index{
+        background-size: 100%;
+        font-size: 120%;
+    }
+    .item1{
+        padding: 20px 0px;
+        background-size: 100%;
+        margin-right: 20px;
+        width: 190px;
+    }
+    
+    .item2{
+        padding: 20px 0px;
+        background-size: 100%;
+        width: 190px;
+    }
+
+}

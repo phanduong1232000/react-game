@@ -1,0 +1,153 @@
+.bg-monney-nft{
+    background:  url(https://gunbow-project.vercel.app/img/background/br2.png) repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-name{
+    background: url(https://gunbow-project.vercel.app/img/SQF/khungheroname03.png) no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding: 30px 0px 70px 0px;
+    margin-bottom: -137px;
+    position: relative;
+}
+.title h3 {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.hero-name01{
+    background: url(https://gunbow-project.vercel.app/img/SQF/khungheroname01.png) no-repeat;
+    background-position: center; 
+    background-size: 100% 80%;
+    padding: 80px 0px 60px 0px;
+}
+
+.items-content-money img{
+    width: 38px !important;
+    margin: 5px 0px;
+}
+.title-hero-name{
+    padding: 70px 0px;
+
+}
+
+.items-content-money{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items-content-money span {
+    color: white;
+}
+.items-content-money p {
+    color:white
+}
+.items-content-money-right{
+    width: 65% !important;
+    padding: 55px 0px;
+}
+
+.img-items2{
+    position: absolute;
+    top: 39%;
+    width: 80px !important;
+    left: 23%;
+}
+
+.icon-tutorial{
+    position: relative;
+   
+}
+.icon1-tutorial{
+    width: 17%;
+    position: absolute;
+    left: -10%;
+    bottom: -40px;
+}
+.icon2-tutorial{
+    width: 17%;
+    position: absolute;
+    right: -10%;
+    bottom: -40px;
+    transform: scaleX(-1);
+}
+@media (max-width: 992px){
+    .items-content-money-right{
+        margin: auto;
+        padding-top: 0px;
+    }
+    .img-items1 {
+        width: 50% !important;
+        margin: auto;
+    }
+    .img-items2{
+        width: 80px !important;
+        left: 44%;
+        top: 9%;
+    }
+    .items-content-money-right{
+        padding-bottom: 100px;
+        margin-top: -75px;
+    }
+    .hero-name{
+        background-size: 75%;
+        margin-bottom: -200px;
+    }
+    .title-hero-name{
+        padding: 100px 0px;
+    }
+}
+@media (max-width: 767px){
+    .img-items1{
+        width: 65% !important;
+    }
+    .img-items2 {
+        width: 80px !important;
+        left: 43%;
+        top: 9%;
+    }
+    .icon1-tutorial{
+        width: 17%;
+        position: absolute;
+        left: -3%;
+        bottom: -40px;
+    }
+    .icon2-tutorial{
+        width: 17%;
+        position: absolute;
+        right: -3%;
+        bottom: -40px;
+        transform: scaleX(-1);
+    }
+
+}
+@media (max-width: 530px){
+    .img-items1{
+        width: 70% !important;
+    }
+    .img-items2 {
+        width: 80px !important;
+        left: 41%;
+        top: 7%;
+    }
+    .hero-name {
+        padding: 50px 0px 70px 0px;
+        margin-bottom: -190px;
+    }
+}
+@media (max-width: 400px){
+    .img-items1{
+        width: 70% !important;
+    }
+    .img-items2 {
+        width: 80px !important;
+        left: 38%;
+        top: 0%;
+    }
+    .img-items-video img{
+        width: 20%;
+    }
+   
+}

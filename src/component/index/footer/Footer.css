@@ -1,0 +1,66 @@
+.footer{
+    background: url(https://gunbow-project.vercel.app/img/background/br3.png) no-repeat;
+    background-size: cover;
+    color: white;
+}
+.row-footer .col-lg-6 img{
+    width: 100%;
+}
+.input-footer{
+    padding: 10px 25px;
+    border: none;
+    background-color: #000000b7;
+    color: white;
+    width: 75%;
+}
+.content-footer-right h4{
+    margin: 30px 0px;
+}
+.content-footer-right p{
+    margin: 15px 0px;
+}
+.content-footer-right{
+    text-align: center;
+}
+.input-footer::placeholder{
+    color: white;
+}
+.input-footer:focus-visible{
+    border: none;
+    outline: none;
+}
+.button-footer{
+    position: relative;
+    left: -30px;
+    padding: 10px 25px;
+    border: none;
+    border-top-left-radius: 56px;
+    border-bottom-left-radius: 56px;
+    background-image: linear-gradient(150deg, #e34f4f 0%, #c284f5 78%);
+}
+.button-footer i {
+    color: white;
+}
+.icon-footer{
+    text-align: center;
+}
+.icon-link{
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 15px;
+    background-color: #000000d0;
+    border-radius: 5px;
+    
+}
+.icon-link i {
+    width: 30px;
+}
+.abc-alert{
+    background-color: blue;
+}
+.overlay-market {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.342);
+    height: 100%;
+    width: 100%;
+  }

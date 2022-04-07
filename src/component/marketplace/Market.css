@@ -1,0 +1,167 @@
+.overlay-market {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.342);
+  height: 100%;
+  width: 100%;
+}
+.row-market .col-xl-2 {
+    margin: 15px 0px;
+}
+.title-market{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #a30808;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.card-bg-market{
+    background: url(https://gunbow-project.vercel.app/img/SQF/khungheronamemobile02.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .5s
+}
+.card-bg-market:hover {
+    transform: translateY(-5px);
+}
+.card-title-market{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.card-text-market{
+    text-align: center;
+}
+.card-text-market p {
+    font-weight: 700;
+    margin-top: 20px;
+}
+.rate-item span {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(150deg, #e8ee3f 0%, aqua 78%);
+}
+.card-text-market img{
+    width: 80px;
+    height: 80px;
+}
+.item-more-market{
+    background: url(https://gunbow-project.vercel.app/img/SQF/buttonbuySQF.png) no-repeat;
+    background-size: 90% 80%;
+    padding: 20px 0px;
+    text-align: center;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.properties-item-epic{
+    background-color: purple;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 50%;
+    margin: 10px auto;
+}
+.properties-item-nomal{
+    background-color: green;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 50%;
+    margin: 10px auto;
+}
+.properties-item-rare{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.pagin-market{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #0000003d;
+    
+}
+.pagin-market li {
+    font-size: 1.3rem;
+    margin: 30px 10px;
+}
+
+button.ascending::after {
+    content: '▼';
+    display: inline-block;
+    margin-left: 2px;
+    
+  }
+  
+button.descending::after {
+    content: '▲';
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.button-filter {
+    text-align: center;
+   margin-top: 10px;
+}
+.button-filter button {
+    margin-right: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.button-filter button:nth-child(1){
+    background-color: rgba(0, 128, 0, 0.39);
+    
+}
+.button-filter button:nth-child(2){
+    background-color: rgba(0, 0, 255, 0.425);
+}
+.button-filter button:nth-child(3){
+    background-color: rgba(128, 0, 128, 0.418);
+}
+.button-filter i {
+    margin-left: -50px;
+}
+.button-filter input {
+    border-radius: 20px;
+}
+
+.hot-market{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    color: #04690d;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+
+}
+.title-market-filter{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: #a30808;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.read-more-less--more{
+    background-color: yellow;
+    color: black;
+}
+.read-more-less--less{
+    background-color: yellow;
+    color: black;
+}

@@ -1,0 +1,279 @@
+{
+    "sancti_quest_on_frontline": "Sancti Quest on Frontline",
+    "content": "Game bắn súng tọa độ đỉnh cao nhất hệ mặt trời",
+    "_marketplace": "Thương trường",
+    "_buy_token": "Mua Token",
+    "_watch_video": "Xem Video",
+    "_read_whitepaper": "Đọc sách trắng",
+    "_view": "Xem thêm",
+    "_amount": "Số lượng",
+    "_get": "Nhận",
+    "_ref": "Mã giới thiệu",
+    "_item_attribute": "Thuộc tính vật phẩm",
+    "_level" : "Cấp độ",
+    "_energy": "Năng lượng",
+    "_attack": "Công",
+    "_defense": "Thủ",
+    "_speed": "Tốc",
+    "_lucky": "May mắn",
+    "_passive": "Bị động",
+    "_sell_item": "Bán",
+    "_buy_item" : "Mua vật phẩm",
+    "_transfer_to_game": "Chuyển vào game",
+    "_open" : "Mở",
+    "_cancel": "Hủy bỏ",
+    "_buy_price":"Giá mua",
+    "_sell_price":"Giá bán",
+    "_rarity" : "Phẩm chất",
+    "_epic": "Sử thi",
+    "_normal": "Bình thường",
+    "_rare": "Hiếm",
+    "_balance": "Số dư",
+    "_balance_frozen": "Số dư khóa",
+    "_buy_sqf": "Mua SQF",
+    "_item_details": "Mục chi tiết",
+    "_new_items": "Vật phẩm mới",
+    "_owner": "Chủ nhân",
+    "_created": "Khởi tạo",
+    "_price": "Giá bán",
+    "_load_more": "Tải thêm",
+
+    "header": {
+        "home": "Trang chủ",
+        "marketplace": "Thương trường",
+        "news": "Tin tức",
+        "staking": "Staking",
+        "play_game": "Chơi",
+        "wallet_connect": "Kết nối ví"
+    },
+
+    "footer": {
+        "subscribe_us": "Đăng ký nhận thông tin",
+        "content": "Game bắn súng tọa độ đỉnh cao nhất hệ mặt trời",
+        "copy_right": "©2022 Nhiệm vụ thần thánh trên tiền tuyến, Mọi quyền được bảo lưu."
+    },
+
+    "hero": {
+        "pre_heading": "SQF GAME",
+        "heading": "Sancti Quest on Frontline",
+        "content": "Game bắn súng tọa độ đỉnh cao nhất hệ mặt trời"
+    },
+
+    "buy_token": {
+        "pre_heading": "Mua token",
+        "heading": "Mua SQF",
+        "content": "Một vấn đề nan giải của các dự án gamefi là kiểm soát sự lạm phát của các trò chơi. Lạm phát có thể xảy ra với token, NFT, vật phẩm,… khiến dự án dần mất giá trị. \n Giải quyết vấn đề đó, SQF đã thiết kế cơ chế 1 mã thông báo thay vì 2 mã thông báo (mã thông báo chính và mã thông báo thưởng) như các dự án khác. Trong SQF, mã thông báo không phải là yếu tố chính lưu trữ giá trị của dự án mà là NFT. Kinh tế của trò chơi xoay quanh NFT và NFT sẽ là nơi lưu trữ giá trị. Có thể nói NFT là linh hồn của dự án. "
+    },
+
+    "about": {
+        "pre_heading": "Trò chơi",
+        "heading": "Về  SQF GAME ",
+        "content": "SQF là game bắn súng chiến thuật bắn súng theo tọa độ đề xuất với lối chơi kéo thả. Người chơi sẽ được trải nghiệm qua các cấp độ khác nhau từ dễ, trung bình đến khó, thông qua đó, đầy đủ các chức năng của trò chơi sẽ được mở ra. \n Bối cảnh của mỗi trò chơi chiến đấu là một khu vực được thiết kế với bố cục hợp lý và có màu sắc rực rỡ. SQF được xây dựng trên nền đồ họa 3D thống nhất nên trong tất cả các nhiệm vụ, các nhân vật đều có ngoại hình anime bắt mắt dễ thương cùng với các hiệu ứng kỹ năng hào nhoáng. \n Khi vào game, người chơi sẽ biết lý do tại sao họ lại làm như vậy loại nhiệm vụ. Họ có thể chiến đấu solo hoặc phối hợp với nhóm của bạn để chiến đấu…, hoặc chống lại Boss. Sau đó, trở thành người chiến thắng, người chơi hoàn thành nhiệm vụ của mình để thu thập thiết bị, vàng để chuẩn bị và lên cấp. \n Hãy chơi và thưởng thức cú đánh của bạn trong SQF !!!"
+    },
+
+    "nfts": {
+        "pre_heading": "Sưu tầm NFT",
+        "heading": "Bộ tài sản NFT",
+        "content": "Có nhiều loại NFT trong dự án này mà bạn có thể sử dụng để tăng sức mạnh cho các nhân vật của mình. Nhìn chung, NFT được chia thành 2 loại chính: NFT giới hạn và NFT tiêu hao. \n NFT có giới hạn: bao gồm vũ khí, trang phục, phụ kiện, vật nuôi, ... Những loại NFT này có số lượng giới hạn, trong đó người chơi lưu trữ giá trị khi họ nâng cấp cấp độ từng ngày ngày. NFT có thể được trao đổi, mua hoặc bán trên thị trường. \n NFT tích lũy: bao gồm các loại đá cường hóa, vật liệu nâng cấp, ngọc, thẻ, bùa, ... Đây là những loại NFT có thể tiêu hao, nghĩa là sau khi sử dụng, chúng sẽ trực tiếp bị đốt cháy. Những NFT này vẫn được trao đổi trên thị trường như NFT giới hạn. NFT tiêu hao là vật liệu mà mọi người có thể sử dụng để tăng NFT giới hạn mà họ sở hữu."
+    },
+
+    "white_paper": {
+        "pre_heading": "Sách trắng",
+        "heading": "Chi tiết",
+        "content": "Xem báo cáo chính thức của chúng tôi để biết thông tin chi tiết !"
+    },
+    "game_play": {
+        "pre_heading": "Lối chơi",
+        "heading": "Lối chơi",
+        "content": "Mô tả về lối chơi của trò chơi !"
+    },
+    "token": {
+        "pre_heading": "Phân bổ token",
+        "heading": "Phân bổ token",
+        "content": "Lorem Ipsum chỉ đơn giản là văn bản giả của ngành in ấn và sắp chữ. Lorem Ipsum đã trở thành văn bản giả tiêu chuẩn của ngành kể từ những năm 1500, khi một nhà in không xác định lấy một dãy loại và xáo trộn nó để tạo thành một cuốn sách mẫu.",
+        "token_name": "TÊN TOKEN",
+        "token_symbol": "BIỂU TƯỢNG",
+        "token_supply": "TOKEN CUNG CẤP",
+        "network": "MẠNG BLOCKCHAIN"
+    },
+    "road_map": {
+        "pre_heading": "Lộ trình",
+        "heading": "LỘ TRÌNH",
+        "content": "Xin lưu ý rằng quá trình phát triển trò chơi đang diễn ra và tất cả các ngày dự kiến có thể thay đổi. Mọi sự chậm trễ nếu phát sinh sẽ được thông báo đến cộng đồng trong thời gian sớm nhất."
+    },
+    "team": {
+        "pre_heading": "Thành viên",
+        "heading": "Đội ngũ của chúng tôi",
+        "content": "Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+    },
+    "advisor": {
+        "pre_heading": "Cố vấn",
+        "heading": "CỐ VẤN",
+        "content": "Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+    },
+    "partner": {
+        "pre_heading": "Đối tác",
+        "heading": "Đối tác và nhà đầu tư",
+        "content": "Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+    },
+    "marketplace": {
+        "pre_heading": "Thương trường",
+        "heading": "Tài sản kỹ thuật số độc quyền",
+        "content": "Tất cả các mặt hàng đang bán trên thương trường"
+    },
+    "news": {
+        "pre_heading": "Tin tức & Blog",
+        "heading": "Tin tức & Blog",
+        "content": "Lorem Ipsum chỉ đơn giản là văn bản giả của bản in."
+    },
+    "staking": {
+        "pre_heading": "Staking",
+        "heading": "Sắp ra mắt",
+        "content": "Chúng tôi sẽ phát hành Staking trong bản nâng cấp tiếp theo !"
+    },
+    "account": {
+        "pre_heading": "Tài khoản",
+        "heading": "Thông tin tài khoản",
+        "content": "Tất cả thông tin và kho đồ của bạn",
+        "accounts": {
+            "headline": "Tài khoản",
+            "overview": "Tổng quát",
+            "my_wallet": "Ví của tôi",
+            "address": "Địa chỉ",
+            "ref_link": "Link giới thiệu",
+            "activity": "Lịch sử hoạt động",
+            "buy_token": "Lịch sử mua Token"
+        },
+        "account": "Thông tin tài khoản",
+        "inventory": "Kho đồ",
+        "airdrop": "Quà tiếp tế",
+        "selling": "Đang bán",
+        "buy": "Đã mua",
+        "sold": "Đã bán"
+    },
+    "item_details": {
+        "pre_heading": "Chi tiết",
+        "heading": "Mục chi tiết",
+        "content" : "Thông tin chi tiết về mặt hàng đang được bán"
+    },
+    "new_items": { 
+        "pre_heading": "Vật phẩm mới",
+        "heading" : "Vật phẩm mới",
+        "content" : "Các mặt hàng mới đang được bán trên thị trường!"
+    },
+
+
+    "items": [
+          {
+            "title": 1,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/2.png",
+           "description": "clothers",
+            "properties": "Epic",
+            "type": "properties-item-epic",
+            "rate": "2500",
+            "code": "SQF"
+          },
+          {
+            "title": 2,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/3.png",
+           "description": "green-shirt",
+            "properties": "Rare",
+            "type": "properties-item-rare",
+            "rate": "2000",
+            "code": "SQF"
+          },
+          {
+            "title": 3,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/4.png",
+           "description": "blue-shirt",
+            "properties": "Rare",
+            "type": "properties-item-rare",
+            "rate": "4000",
+            "code": "SQF"
+          },
+          {
+            "title": 4,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/5.png",
+           "description": "clock",
+            "properties": "Nomal",
+            "type": "properties-item-nomal",
+            "rate": "3500",
+            "code": "SQF"
+          },
+          {
+            "title": 5,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/6.png",
+           "description": "bom-smoke",
+            "properties": "Epic",
+            "type": "properties-item-epic",
+            "rate": "3000",
+            "code": "SQF"
+          },
+          {
+            "title": 6,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/7.png",
+           "description": "green-lighting",
+            "properties": "Nomal",
+            "type": "properties-item-nomal",
+            "rate": "4500",
+            "code": "SQF"
+          },
+          {
+            "title": 7,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/8.png",
+           "description": "blue-rock",
+            "properties": "Rare",
+            "type": "properties-item-rare",
+            "rate": "5000",
+            "code": "SQF"
+          },
+          {
+            "title": 8,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/9.png",
+           "description": "dragon-items",
+            "properties": "Epic",
+            "type": "properties-item-epic",
+            "rate": "5500",
+            "code": "SQF"
+          },
+          {
+            "title": 9,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/10.png",
+           "description": "blue-shirt",
+            "properties": "nomal",
+            "type": "properties-item-nomal",
+            "rate": "6500",
+            "code": "SQF"
+          },
+          {
+            "title": 10,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/11.png",
+           "description": "green-clother",
+            "properties": "Rare",
+            "type": "properties-item-rare",
+            "rate": "6000",
+            "code": "SQF"
+          },
+          {
+            "title": 11,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/12.png",
+           "description": "blue-clother",
+            "properties": "Rare",
+            "type": "properties-item-rare",
+            "rate": "8000",
+            "code": "SQF"
+          },
+          {
+            "title": 12,
+            "img": "https://gunbow-project.vercel.app/img/shopitems/13.png",
+           "description": "red-clother",
+            "properties": "Nomal",
+            "type": "properties-item-nomal",
+            "rate": "17000",
+            "code": "SQF"
+          }
+    ]
+
+
+    
+}

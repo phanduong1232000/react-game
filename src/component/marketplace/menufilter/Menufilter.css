@@ -1,0 +1,31 @@
+.filter-menu{
+    background-color: #fbca60;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: none;
+    position: fixed;
+    top: 50%;
+    right: 0px;
+    padding: 10px;
+}
+.filter-menu i {
+    background-color: #f14c00;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu-offcanvas{
+    background-color: #00000095;
+    text-align: center;
+    border: 4px solid #fbca60;
+}
+
+.menu-offcanvas-header button{
+    background-color: white;
+    opacity: 1;
+    margin: 30px 30px 0px 0px !important;
+}
+.menu-canvas-body h4 {
+    padding-top: 30%;
+}
