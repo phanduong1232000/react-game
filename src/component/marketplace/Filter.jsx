@@ -71,23 +71,23 @@ const ProductTable = (props) => {
 
 
   // search
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
+  // const [searchInput, setSearchInput] = useState("");
+  // const [filteredResults, setFilteredResults] = useState([]);
 
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-    if (searchInput !== "") {
-      const filteredData = text.filter((item) => {
-        return Object.values(item)
-          .join("")
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else {
-      setFilteredResults(text);
-    }
-  };
+  // const searchItems = (searchValue) => {
+  //   setSearchInput(searchValue);
+  //   if (searchInput !== "") {
+  //     const filteredData = text.filter((item) => {
+  //       return Object.values(item)
+  //         .join("")
+  //         .toLowerCase()
+  //         .includes(searchInput.toLowerCase());
+  //     });
+  //     setFilteredResults(filteredData);
+  //   } else {
+  //     setFilteredResults(text);
+  //   }
+  // };
   // end search
 
   return (
@@ -118,7 +118,8 @@ const ProductTable = (props) => {
         icon="search"
         className="input-footer"
         placeholder="Search..."
-        onChange={(e) => searchItems(e.target.value)}
+        // onChange={(e) => searchItems(e.target.value)}
+        onChange={(e) => props.callback(e.target.value)}
       /> <i className="fa-solid fa-magnifying-glass"></i>
       </div>
 
@@ -126,8 +127,8 @@ const ProductTable = (props) => {
       <Card.Group style={{ marginTop: 20 }}>
         <div className="container-fluid">
           <div className="row row-market">
-            {searchInput.length > 1
-              ? filteredResults.map((item, i) => {
+            {props.searchInput.length > 1
+              ? props.filteredResults.map((item, i) => {
                   return (
                     <div
                       key={i}
@@ -190,10 +191,14 @@ const ProductTable = (props) => {
   );
 };
 
-export default function Filter() {
+export default function Filter(props) {
   return (
+    
     <div className="App">
-      <ProductTable products={texts.items} />
+      <ProductTable products={texts.items} result={props.result} 
+        callback={props.callback} searchInput={props.searchInput} 
+        filteredResults={props.filteredResults}
+        />
     </div>
   );
 }

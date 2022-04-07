@@ -6,25 +6,25 @@ import texts from "../../../data.json"
 
 const text = texts.items;
 
-function Menufilter() {
+function Menufilter(props) {
 
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
+  // const [searchInput, setSearchInput] = useState("");
+  // const [filteredResults, setFilteredResults] = useState([]);
 
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-    if (searchInput !== "") {
-      const filteredData = text.filter((item) => {
-        return Object.values(item)
-          .join("")
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else {
-      setFilteredResults(text);
-    }
-  };
+  // const searchItems = (searchValue) => {
+  //   setSearchInput(searchValue);
+  //   if (searchInput !== "") {
+  //     const filteredData = text.filter((item) => {
+  //       return Object.values(item)
+  //         .join("")
+  //         .toLowerCase()
+  //         .includes(searchInput.toLowerCase());
+  //     });
+  //     setFilteredResults(filteredData);
+  //   } else {
+  //     setFilteredResults(text);
+  //   }
+  // };
 
   return (
     <div>
@@ -61,7 +61,7 @@ function Menufilter() {
                 icon="search"
                 className="input-footer"
                 placeholder="Search..."
-                onChange={(e) => searchItems(e.target.value)}
+                onChange={(e) => props.callback(e.target.value)}
               />
               <i className="fa-solid fa-magnifying-glass"></i>
             </div>
