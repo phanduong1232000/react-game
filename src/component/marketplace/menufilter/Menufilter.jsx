@@ -2,28 +2,13 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "./Menufilter.css";
-import texts from "../../../data.json"
 
-const text = texts.items;
+function Menufilter(props) {
+  const [name, setName] = useState();
 
-function Menufilter() {
-
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
-
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-    if (searchInput !== "") {
-      const filteredData = text.filter((item) => {
-        return Object.values(item)
-          .join("")
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else {
-      setFilteredResults(text);
-    }
+  const handleChangeName = (e) => {
+    const name = e.target.value;
+    setName(name);
   };
 
   return (
@@ -55,15 +40,43 @@ function Menufilter() {
         <div className="offcanvas-body menu-canvas-body">
           <h4>FILTER</h4>
           <div className="item-body">
-            <h6>Sort By: </h6>
-            <div className="button-filter">
+            <h6>Search :</h6>
+            <div className="button-filter-sidebar">
               <input
                 icon="search"
-                className="input-footer"
+                className="input-footer-search-sidebar"
                 placeholder="Search..."
-                onChange={(e) => searchItems(e.target.value)}
+                onChange={handleChangeName}
               />
-              <i className="fa-solid fa-magnifying-glass"></i>
+              <button className="menufilter-button" onClick={(e) => props.callback(name)}>
+                <i className="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div className="item-body">
+              <h6>Sort By:</h6>
+              <div className="button-filter">
+                <button
+                  type="button"
+                  onClick={() => props.call("title")}
+                  // className={getClassNamesFor("title")}
+                >
+                  Sắp theo thứ tự
+                </button>
+                <button
+                  type="button"
+                  // onClick={() => requestSort("description")}
+                  // className={getClassNamesFor("description")}
+                >
+                  Sắp theo tên
+                </button>
+                <button
+                  type="button"
+                  // onClick={() => requestSort("rate")}
+                  // className={getClassNamesFor("rate")}
+                >
+                  Sắp theo giá
+                </button>
+              </div>
             </div>
           </div>
         </div>

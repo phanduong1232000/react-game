@@ -129,11 +129,25 @@ button.descending::after {
 .button-filter button:nth-child(3){
     background-color: rgba(128, 0, 128, 0.418);
 }
-.button-filter i {
+.search-i {
     margin-left: -50px;
 }
 .button-filter input {
     border-radius: 20px;
+}
+.search-input{
+    text-align: center;
+}
+.input-footer-search{
+    padding: 10px 25px;
+    border: none;
+    background-color: #000000b7;
+    color: white;
+    width: 75%;
+}
+.input-footer-search:focus-visible {
+    border: none;
+    outline: none;
 }
 
 .hot-market{

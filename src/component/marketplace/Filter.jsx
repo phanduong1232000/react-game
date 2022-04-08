@@ -1,94 +1,73 @@
-import React, { useState } from "react";
-import { Card }from "semantic-ui-react";
+import React from "react";
+import { Card } from "semantic-ui-react";
 import texts from "../../data.json";
 import "./Market.css";
+import Menufilter from "./menufilter/Menufilter";
 
- // search
- const text = texts.items;
-// end search
 
-const useSortableData = (items, config = null) => {
-  const [sortConfig, setSortConfig] = React.useState(config);
+  const useSortableData = (items, config = null) => {
 
- 
 
-  const sortedItems = React.useMemo(() => {
-    let sortableItems = [...items];
+    const [sortConfig, setSortConfig] = React.useState(config);
 
-    const handleString = (string) => {
-      let y = (string)
-      let x = Number(string);
-      
-      if (x === Number(string)) 
-      {
-        return x;
+    const sortedItems = React.useMemo(() => {
+      let sortableItems = [...items];
+
+      const handleString = (string) => {
+        let y = string;
+        let x = Number(string);
+
+        if (x === Number(string)) {
+          return x;
+        }
+        if (y === string) {
+          return y;
+        }
+      };
+
+      if (sortConfig !== null) {
+        sortableItems.sort((a, b) => {
+          if (
+            handleString(a[sortConfig.key]) < handleString(b[sortConfig.key])
+          ) {
+            return sortConfig.direction === "ascending" ? -1 : 1;
+          }
+
+          if (
+            handleString(a[sortConfig.key]) > handleString(b[sortConfig.key])
+          ) {
+            return sortConfig.direction === "ascending" ? 1 : -1;
+          }
+
+          return 0;
+        });
       }
-      if (y === (string)) 
-      {
-        return y;
+      return sortableItems;
+    }, [items, sortConfig]);
+
+    const requestSort = (key) => {
+      let direction = "ascending";
+      if (
+        sortConfig &&
+        sortConfig.key === key &&
+        sortConfig.direction === "ascending"
+      ) {
+        direction = "descending";
       }
+      setSortConfig({ key, direction });
     };
 
-    if (sortConfig !== null) {
-      sortableItems.sort((a, b) => {
-        if (handleString(a[sortConfig.key]) < handleString(b[sortConfig.key])) {
-          return sortConfig.direction === "ascending" ? -1 : 1;
-        }
-
-        if (handleString(a[sortConfig.key]) > handleString(b[sortConfig.key])) {
-          return sortConfig.direction === "ascending" ? 1 : -1;
-        }
-
-        return 0;
-      });
-    }
-    return sortableItems;
-  }, [items, sortConfig]);
-
-  const requestSort = (key) => {
-    let direction = "ascending";
-    if (
-      sortConfig &&
-      sortConfig.key === key &&
-      sortConfig.direction === "ascending"
-    ) {
-      direction = "descending";
-    }
-    setSortConfig({ key, direction });
+    return { items: sortedItems, requestSort, sortConfig };
   };
 
-  return { items: sortedItems, requestSort, sortConfig };
-};
-
-const ProductTable = (props) => {
-  const { items, requestSort, sortConfig } = useSortableData(props.products);
-  const getClassNamesFor = (name) => {
-    if (!sortConfig) {
-      return;
-    }
-    return sortConfig.key === name ? sortConfig.direction : undefined;
-  };
-
-
-  // search
-  const [searchInput, setSearchInput] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
-
-  const searchItems = (searchValue) => {
-    setSearchInput(searchValue);
-    if (searchInput !== "") {
-      const filteredData = text.filter((item) => {
-        return Object.values(item)
-          .join("")
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
-      });
-      setFilteredResults(filteredData);
-    } else {
-      setFilteredResults(text);
-    }
-  };
-  // end search
+  const ProductTable = (props) => {
+    const { items, requestSort, sortConfig } = useSortableData(props.products);
+    const getClassNamesFor = (name) => {
+      if (!sortConfig) {
+        return;
+      }
+      return sortConfig.key === name ? sortConfig.direction : undefined;
+    };
 
   return (
     <>
@@ -114,20 +93,23 @@ const ProductTable = (props) => {
         >
           Sắp theo giá
         </button>
-        <input
-        icon="search"
-        className="input-footer"
-        placeholder="Search..."
-        onChange={(e) => searchItems(e.target.value)}
-      /> <i className="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div className="search-input">
+      <input
+            icon="search"
+            className="input-footer-search"
+            placeholder="Search..."
+            onChange={(e) => props.callback(e.target.value)}
+          />{" "}
+          <i className="fa-solid fa-magnifying-glass search-i"></i>
       </div>
 
-     
+
       <Card.Group style={{ marginTop: 20 }}>
         <div className="container-fluid">
           <div className="row row-market">
-            {searchInput.length > 1
-              ? filteredResults.map((item, i) => {
+            {props.searchInput
+              ? props.filteredResults.map((item, i) => {
                   return (
                     <div
                       key={i}
@@ -184,16 +166,28 @@ const ProductTable = (props) => {
           </div>
         </div>
       </Card.Group>
-
-    
     </>
   );
 };
 
-export default function Filter() {
+export default function Filter(props) {
   return (
     <div className="App">
-      <ProductTable products={texts.items} />
+      <ProductTable
+        products={texts.items}
+        callback={props.callback}
+        searchInput={props.searchInput}
+        filteredResults={props.filteredResults}
+      />
+      
+       <Menufilter
+        callback={props.callback}
+        searchInput={props.searchInput}
+        filteredResults={props.filteredResults}
+        
+        
+        
+      />
     </div>
   );
 }

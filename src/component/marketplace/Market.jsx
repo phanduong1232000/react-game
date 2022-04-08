@@ -1,12 +1,32 @@
 import React from "react";
 import Filter from "./Filter";
 import "./Market.css";
-import Menufilter from "./menufilter/Menufilter";
 import Pagin from "./Pagin";
-
-
+import { useState } from "react";
+import text from "../../data.json";
 
 export default function Market() {
+
+  // search
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredResults, setFilteredResults] = useState([]);
+
+  const searchItems = (searchValue) => {
+    setSearchInput(searchValue);
+    if (searchInput !== "") {
+      const filteredData = text.items.filter((item) => {
+        return Object.values(item)
+          .join("")
+          .toLowerCase()
+          .includes(searchInput.toLowerCase());
+      });
+
+      setFilteredResults(filteredData);
+    } else {
+      setFilteredResults(text.items);
+    }
+  };
+  // end search
 
   return (
     <>
@@ -16,10 +36,11 @@ export default function Market() {
         <h2 className="text-center hot-market">Sản Phẩm Nổi Bật</h2>
       </div>
       <Pagin itemsPerPage={4} />
-      <Filter />
-      <Menufilter />
+      <Filter
+        callback={searchItems}
+        searchInput={searchInput}
+        filteredResults={filteredResults}
+      />
     </>
   );
 }
-
-
